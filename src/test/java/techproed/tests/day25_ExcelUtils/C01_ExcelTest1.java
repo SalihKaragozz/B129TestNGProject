@@ -14,6 +14,7 @@ public class C01_ExcelTest1 {
         String email = excelUtils.getCellData(1,0);
         String password = excelUtils.getCellData(1,1);
         System.out.println(email+" || "+password);
+        System.out.println(excelUtils.columnCount());// sütun sayısı
 
         //BlueRentalCar Adresine gidelim
         //Excel dosyasından aldığımız ilk email ve password ile sayfaya login olalım

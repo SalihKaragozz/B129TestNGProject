@@ -17,7 +17,8 @@ public class C05_DataProvider {
     @DataProvider
     public static Object[][] blueRental() {
         return new Object[][]{{"sam.walker@bluerentalcars.com","c!fas_art"},
-                {"kate.brown@bluerentalcars.com","tad1$Fas"}};
+                {"kate.brown@bluerentalcars.com","tad1$Fas"},
+                {"raj.khan@bluerentalcars.com" , " v7Hg_va^"}};
     }
     @Test(dataProvider = "blueRental")
     public void testdataprovider(String email, String password) {
