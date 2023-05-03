@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" >
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day24_Properties_Pages/SmokeTest/NegativeTest.java">
+        <classes>
+            <class name="techproed.tests.day24_Properties_Pages.SmokeTest.NegativeTest">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day26_DataProvider/C01_DataProviderTest1.java">
+        <classes>
+            <class name="techproed.tests.day26_DataProvider.C01_DataProviderTest1">
+                <methods>
+                    <include name="dataProviderExcelTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

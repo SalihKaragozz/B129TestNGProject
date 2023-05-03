@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="5">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day27_paralleltest">
+        <classes>
+            <class name="techproed.tests.day27_paralleltest.C01_WebTables">
+                <methods>
+                    <include name="table1Print"/>
+                    <include name="satir3VerileriPrint"/>
+                    <include name="sonSatirVerileri"/>
+                    <include name="sutun5Verileri"/>
+                    <include name="printDataTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_paralleltest.C02_DropDown">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_paralleltest.C03_Actions">
+                <methods>
+                    <include name="actions"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

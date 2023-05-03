@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+
+    <!-- parallel="classes" ==> Her bir thread(işlem) bir class ile yürür. Üzerinde çalıştığı classta işlemi bitince sıradaki classa geçer  -->
+    <!-- parallel="methods" ==> Her bir thread(işlem) bir method ile yürür. Üzerinde çalıştığı methodda işlemi bitince sıradaki methoda geçer  -->
+    <!-- Parallel çalışan testler biribirindeb bağımsız olmalıdır. Bağımlılığı olan testler parelel çalışmada hata verebilir.-->
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day22_Annotation">
+        <classes>
+            <class name="techproed.tests.day22_Annotation.C01_Annotation">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day22_Annotation.C02_BeforeAfterMethod">
+                <methods>
+                    <include name="techproedTest"/>
+                    <include name="amazonTest"/>
+                    <include name="facebookTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day22_Annotation.C03_Priority">
+                <methods>
+                    <include name="techproedTest"/>
+                    <include name="amazonTest"/>
+                    <include name="facebookTest"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day22_Annotation.Day22_TestNGAnnotations">
+                <methods>
+                    <include name="beforeSuite"/>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                    <include name="test05"/>
+                    <include name="test06"/>
+                    <include name="test07"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -27,7 +27,7 @@ public class C02_DataProviderTest2 {
 
     }
 
-    @Test(dataProvider = "customerData", dataProviderClass = DataProviderUtils.class)
+    @Test(dataProvider = "customerData", dataProviderClass = DataProviderUtils.class,groups = "RegressionGroup1")
     public void test3(String username, String password){
 
         System.out.println("Kullanıcı adı: "+username+", Şifre: "+password);
