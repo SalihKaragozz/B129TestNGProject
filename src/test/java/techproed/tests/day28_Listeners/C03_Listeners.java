@@ -12,7 +12,7 @@ import static org.testng.AssertJUnit.assertTrue;
 @Listeners(techproed.utilities.Listeners.class)
 public class C03_Listeners {
 
-    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
+    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)// Bu parametreyi kullanmak tavsiye edilmez.Test class ı mümkün olduğu kadar sade olmalıdır
     public void successTest(){
         System.out.println("PASS");
 

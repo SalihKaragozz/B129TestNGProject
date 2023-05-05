@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <listeners><!-- Bu kısım ile test suitimizi Listeners class ile ilişkilendiriyoruz -->
-        <listener class-name="techproed.utilities.ListenersRetry"></listener>
+    <listeners>
+        <listener class-name="techproed.utilities.ListenersRetryAnalyzer"></listener>
     </listeners>
 
 
     <test verbose="2" preserve-order="true"
-          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day28_Listeners/C03_Listeners.java">
+          name="C:/Users/Efendy/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/day28_Listeners/C04_Listeners.java">
         <classes>
-            <class name="techproed.tests.day28_Listeners.C03_Listeners">
+            <class name="techproed.tests.day28_Listeners.C04_Listeners">
                 <methods>
                     <include name="successTest"/>
                     <include name="failTest"/>
